@@ -1,0 +1,13 @@
+.page {
+    min-height: 84%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+    .page {
+        flex-direction: column;
+    }
+}

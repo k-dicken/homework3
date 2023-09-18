@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    // border: 1px red solid;
+}
+
+html, body {
+    height: 100%;
+
+    font-family: Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #990000;
+    font-weight: bold;
+    color: #fff;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #5A0C0C;
+}
+
+.required {
+    color: #990000;
+}

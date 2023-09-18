@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: Tahoma, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+
+.button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #990000;
+  font-weight: bold;
+  color: #fff; }
+
+.button:hover {
+  cursor: pointer;
+  background-color: #5A0C0C; }
+
+.required {
+  color: #990000; }
+
+header {
+  width: 100%;
+  height: 10%;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header * {
+    margin: 0; }
+  header svg {
+    height: 80%; }
+
+nav {
+  height: 6%;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #990000; }
+  nav a {
+    text-decoration: none;
+    color: white; }
+
+.page {
+  min-height: 84%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+@media only screen and (max-width: 900px) {
+  .page {
+    flex-direction: column; } }
+
+.display {
+  min-height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  background-color: #f0f0f0; }
+  .display .title {
+    margin-bottom: 36px; }
+  .display .students {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .display .students .student {
+      height: fit-content;
+      padding: 36px 24px;
+      border-radius: 12px;
+      border-top: 4px #777 solid;
+      margin: 0 12px 12px 0;
+      background-color: #fff; }
+      .display .students .student .contact-info {
+        font-size: small;
+        margin-bottom: 16px; }
+        .display .students .student .contact-info svg {
+          fill: #777; }
+        .display .students .student .contact-info p {
+          color: #777;
+          margin-bottom: 6px; }
+      .display .students .student a {
+        color: #990000; }
+    .display .students .student:hover {
+      border-top: 4px #990000 solid;
+      cursor: pointer;
+      background-color: #fafafa; }
+
+@media only screen and (max-width: 900px) {
+  .display {
+    width: 100%; } }
+
+.form {
+  height: 100%;
+  width: 30%;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  border-right: #777; }
+  .form .form-row {
+    margin-bottom: 12px; }
+    .form .form-row div {
+      margin-bottom: 12px; }
+      .form .form-row div label {
+        font-size: small;
+        margin-top: 6px;
+        margin-bottom: 24px; }
+    .form .form-row .input-small {
+      width: 50%; }
+  .form input {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 2px solid #777;
+    border-radius: 3px 3px 0 0;
+    padding: 8px;
+    width: 100%; }
+  .form input:focus {
+    border: #990000 1px solid; }
+  .form label {
+    font-size: small;
+    margin-top: 6px;
+    margin-bottom: 24px; }
+  .form textarea {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 2px solid #777;
+    border-radius: 3px 3px 0 0;
+    padding: 8px;
+    width: 100%; }
+  .form .names {
+    margin-bottom: 18px; }
+
+@media only screen and (max-width: 900px) {
+  .form {
+    height: fit-content;
+    width: 100%; }
+    .form .form-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px; }
+      .form .form-row div {
+        width: 40%; }
+      .form .form-row .input-small {
+        width: 15%; }
+      .form .form-row .input-large {
+        width: 45%; } }
